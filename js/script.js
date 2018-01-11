@@ -3,18 +3,12 @@
 // Write HTML for your project
 //Class 2:  
 // Declare four global variables for intial state of the list of choices, the computer choice, the user choice, and the winner.  
-var userCoice = "";
-var computerChoice = "";
-var winner = "";
-var choices = ["rock", "paper", "scissors"];
 // Practice using console.log() and debugger to debug your code
 // Create your document ready function. 
 // Create a click hander for when the "Shoot!" button is clicked, takes in the user choice from the input field, 
 // Display the user choice to the output screen
 //Class 3:  
 // Randomly choose among 'rock', 'paper', or 'scissors' from the list of choices 
-console.log(choices[Math.floor(Math.random() * 3)]);
-
 // Display the computer choice to the output screen
 // Compare the user choice and the computer choice to determine who won. 
 // Display the user winner to the output screen 
@@ -28,13 +22,79 @@ console.log(choices[Math.floor(Math.random() * 3)]);
 
 /* global $*/
 //FUNCTIONS
-$(document).ready(function() {
-        console.log('run');
-        $("#shoot").click(function() {
-                $("#myid").val();
-                console.log("ready");
-        });
+/*var userCoice = "G";
+var computerChoice = "P";
+var winner = "W";
+var choices = ["rock", "paper", "scissors"];*/
+
+$("#shoot").click(function() {
+        var userChoice = $("input").val();
+        $("#insertchoice").html(userChoice);
+        var choices = ["rock", "paper", "scissors"];
+        var randOm = Math.floor(Math.random()*3);
+        var computerChoice = choices[randOm];
+        $("#insertchoice2").html(computerChoice);
+        
+        if (userChoice == computerChoice){
+                $("#win").html("Tie!");
+        }
+        if (userChoice == "Rock" && computerChoice === "Scissors"){
+                $("#win").html("User wins!");
+        }
+        if (userChoice == "Paper" && computerChoice === "Rock"){
+                $("#win").html("User wins!");
+        }
+        if (userChoice == "Scissors" && computerChoice === "Paper"){
+                $("#win").html("User wins!");
+        }
+        if (userChoice == "Rock" && computerChoice === "Paper"){
+                $("#win").html("Computer wins!");
+        }
+        if (userChoice == "Paper" && computerChoice === "Scissors"){
+                $("#win").html("Computer wins!");
+        }
+        if (userChoice == "Scissors" && computerChoice === "Rock"){
+                $("#win").html("Computer wins!");
+        }
 });
 
 
+function GetValue()
+{
+   var userChoice=["rock","paper","scissors" ];
+   var z=userChoice[Math.floor(Math.random()* userChoice.length)];
+    //alert(random);
+    document.getElementById("message").innerHTML=z;
+}
+function myFunction() {
+    var x = document.getElementById("myText").value;
+    document.getElementById("demo").innerHTML = x;
+}
+
 // DOCUMENT READY FUNCTION
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
