@@ -10,8 +10,7 @@
       <!-- Link Javascript File here -->
       <script src="js/script.js"></script>
       <!-- Latest compiled and minified Bootstrap CSS -->
-      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   </head>
 
   <body>
@@ -23,18 +22,19 @@
         5. Add divs to record User Choice and Computer Choice.
         6. Add a div to record the Winner.
      -->
-     <h1>Rock, Paper, Scissors Game</h1>
+     <h1>Rock Paper Scissors Game</h1>
     
     <div class="container text-center">
     
       <p>The player will type either rock, paper, or scissors and click on shoot to see the results</p>
       
-  Computer Choice:<input type="button" id="" value="Shoot" onclick="GetValue();" >
-    <p id="message" ></p>
+  Computer Choice:
+    <p id="computerChoice" ></p>
     
     User choice: <input type="text" id="myText" value="">
-    <button onclick="myFunction()">shoot</button>
-    <p id="demo"></p>
+    <button id="shoot">shoot</button>
+    <p id="userChoice"></p>
+    <p id="win"></p>
         
             <button class="button1"><input type="image" src="http://images.clipartpanda.com/rock-clipart-clipart-harvestable-resources-rock.png" alt="Rock" height="115"></button>
     
@@ -42,6 +42,7 @@
             
             <button class="button3"><input type="image" src="https://openclipart.org/download/288678/scissors-3.svg" alt="scissors" height="190"></button>
             
-  </body>
-
+    </div>
+    </body>
 </html>
+

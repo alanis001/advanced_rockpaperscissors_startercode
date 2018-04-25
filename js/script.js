@@ -27,50 +27,39 @@ var computerChoice = "P";
 var winner = "W";
 var choices = ["rock", "paper", "scissors"];*/
 
+$(document).ready(function() {
+        
 $("#shoot").click(function() {
-        var userChoice = $("input").val();
-        $("#insertchoice").html(userChoice);
+        var userChoice = $("#myText").val();
+        $("#userChoice").html(userChoice);
         var choices = ["rock", "paper", "scissors"];
         var randOm = Math.floor(Math.random()*3);
         var computerChoice = choices[randOm];
-        $("#insertchoice2").html(computerChoice);
+        $("#computerChoice").html(computerChoice);
         
-        if (userChoice == computerChoice){
+        if (userChoice === computerChoice){
                 $("#win").html("Tie!");
         }
-        if (userChoice == "Rock" && computerChoice === "Scissors"){
+        if (userChoice === "rock" && computerChoice === "Scissors"){
                 $("#win").html("User wins!");
         }
-        if (userChoice == "Paper" && computerChoice === "Rock"){
+        if (userChoice === "paper" && computerChoice === "Rock"){
                 $("#win").html("User wins!");
         }
-        if (userChoice == "Scissors" && computerChoice === "Paper"){
+        if (userChoice === "scissors" && computerChoice === "Paper"){
                 $("#win").html("User wins!");
         }
-        if (userChoice == "Rock" && computerChoice === "Paper"){
+        if (userChoice === "rock" && computerChoice === "Paper"){
                 $("#win").html("Computer wins!");
         }
-        if (userChoice == "Paper" && computerChoice === "Scissors"){
+        if (userChoice === "paper" && computerChoice === "Scissors"){
                 $("#win").html("Computer wins!");
         }
-        if (userChoice == "Scissors" && computerChoice === "Rock"){
+        if (userChoice === "scissors" && computerChoice === "Rock"){
                 $("#win").html("Computer wins!");
         }
 });
-
-
-function GetValue()
-{
-   var userChoice=["rock","paper","scissors" ];
-   var z=userChoice[Math.floor(Math.random()* userChoice.length)];
-    //alert(random);
-    document.getElementById("message").innerHTML=z;
-}
-function myFunction() {
-    var x = document.getElementById("myText").value;
-    document.getElementById("demo").innerHTML = x;
-}
-
+});
 // DOCUMENT READY FUNCTION
 
 

@@ -1,22 +1,24 @@
 h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size:40px;
+    font-family: 'Poiret One', cursive;
+    font-size:70px;
+    text-align:center;
+    color:black;
     }
 body {
- 
-   background-color: #cccccc;
+   text-align:center;
+   background-image:url("https://www.xmple.com/wallpaper/solid-color-plain-one-colour-lime-single-1920x1080-c-c4fab0-f-24.svg");
 }    
 p {
     font-family: 'Open Sans', sans-serif;
-    font-size:20px ;
+    font-size:15px ;
 }
     
 .button1 {
     border: solid;
     color: teal;
-    padding: 69px 69px;
+    padding: 102px 97px;
     text-decoration: none;
-    margin: 30px 100px;
+    margin: 26px 76px;
     cursor: pointer;
     border-radius:180px;
     background-color:#76eec6;
@@ -24,10 +26,10 @@ p {
 .button2 {
     border: solid;
     color: teal;
-    padding: 40px 40px;
+    padding: 63px 59px;
     text-decoration: none;
     display: block;
-    margin: 30px 100px;
+    margin: -350px 1009px;
     cursor: pointer;
     border-radius:180px;
     background-color:#F99989;
@@ -35,10 +37,10 @@ p {
 .button3 {
     border: solid;
     color: teal;
-    padding:40px 40px;
+    padding:66px 65px;
     text-decoration: none;
-    display: inline-block;
-    margin: 30px 100px;
+    display: flex;
+    margin: 27px 46px;
     cursor: pointer;
     border-radius:180px;
     background-color:white;
