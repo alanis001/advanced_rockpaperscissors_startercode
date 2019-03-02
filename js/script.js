@@ -40,22 +40,22 @@ $("#shoot").click(function() {
         if (userChoice === computerChoice){
                 $("#win").html("Tie!");
         }
-        if (userChoice === "rock" && computerChoice === "Scissors"){
+        if (userChoice == "rock" && computerChoice === "Scissors"){
                 $("#win").html("User wins!");
         }
-        if (userChoice === "paper" && computerChoice === "Rock"){
+        if (userChoice == "paper" && computerChoice === "Rock"){
                 $("#win").html("User wins!");
         }
-        if (userChoice === "scissors" && computerChoice === "Paper"){
+        if (userChoice == "scissors" && computerChoice === "Paper"){
                 $("#win").html("User wins!");
         }
-        if (userChoice === "rock" && computerChoice === "Paper"){
+        if (userChoice == "rock" && computerChoice === "Paper"){
                 $("#win").html("Computer wins!");
         }
-        if (userChoice === "paper" && computerChoice === "Scissors"){
+        if (userChoice == "paper" && computerChoice === "Scissors"){
                 $("#win").html("Computer wins!");
         }
-        if (userChoice === "scissors" && computerChoice === "Rock"){
+        if (userChoice == "scissors" && computerChoice === "Rock"){
                 $("#win").html("Computer wins!");
         }
 });
